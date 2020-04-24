@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/customStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <%if(msg!=''){%>
+        <div class="alert alert-success col-xs-6" id="flash_msg_dashboard" style="z-index: 999999;"><h5><center><%= msg%></center></h5></div>
+    <%} %>
+    <div class="container-fluid">
+     
+        <div class="row loginBanner">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:0">
+  <a href ="/home">  <img src="pics/delivery_boy.jpg" alt="" height="100%" width="100%"></a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 align-self-center">
+                <h2 class="text-center">Login</h2>
+                <br>
+                <form action="/login_user" method="post">
+                    <div class="form-group">
+                        <input type="email" class="form-control" name ="email" id="email" placeholder="Enter email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" id="pwd" placeholder="Enter password" required>
+                    </div>
+                    <div class="checkbox form-group">
+                        <label><input type="checkbox"> Remember me</label>
+                    </div>
+                    <div class="col-md-12 col-lg-12 text-center">
+                        <button type="submit" class="btn btn-primary wideButton align-self-center">Login</button>
+
+                        <!-- <a type="submit" href="feature1.html"  class="btn btn-primary wideButton align-self-center">Login</a>                         -->
+                    </div>                   
+                </form>
+                <div class="col-md-12 col-lg-12 text-center">                        
+                    <a type="submit" href="/register" class="btn btn-success wideButton align-self-center">Register</a>
+                </div>
+                <br>
+                <div class="col-md-12 col-lg-12 text-center">                        
+                    <a type="submit" href="/forgot_password" class="btn btn-warning wideButton align-self-center">Forgot Password</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    setTimeout(() => {
+       $("#flash_msg_dashboard").fadeOut('slow');
+     },3000);
+</script>
+</html>

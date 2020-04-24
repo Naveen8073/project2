@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Feature</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/customStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <%if(msg!=''){%>
+        <div class="alert alert-success col-xs-6" id="flash_msg_dashboard" style="z-index: 999999;"><h5><center><%= msg%></center></h5></div>
+    <%} %>
+    <nav class="navbar navbar-expand-lg" id="ftco-navbar">
+        <div class="container">
+            <div class="col-md-3 d-flex align-items-center">
+                <h2 class="">Feature</h2>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav text-right ml-auto">
+                    <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="/logout" class="nav-link">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END nav -->
+
+    <div class="col-lg-12 col-md-12 featureBanner" style="padding:0">
+        <img src="pics/food_d.png" alt="" height="500px" width="100%" style="object-fit: cover;">
+    </div>
+
+    <section class="innerSection">
+        <div class="container">
+            <div class="row justify-content-center pb-5 mb-3">
+                <div class="col-md-7 heading-section text-center">
+                    <span class="subheading">We offer Services</span>
+                    <h2>Our management services</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 services">       
+                    <div class="row">         
+                        <div class="col-md-3">
+                            <span><img class="manImg" height="80px" width="src=80px" src="pics/staff.png"></img></span>
+                        </div>
+                        <div class="media-body pl-3 col-md-9">
+                            <h3 class="heading">Staff</h3>
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+                                unorthographic.</p>
+                            <p><a href="staff1.html" class="btn-custom">Read more</a></p>
+                        </div>    
+                    </div>                
+                </div>
+                    <div class="col-md-6 services">
+                        <div class="row"> 
+                        <div class="col-md-3">
+                            <span><img class="manImg" height="80px" width="src=80px"
+                                    src="pics/warehouse.png"></img></span>
+                        </div>
+                        <div class="media-body pl-3 col-md-9">
+                            <h3 class="heading">Stock</h3>
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+                                unorthographic.</p>
+                            <p><a href="stock1.html" class="btn-custom">Read more</a></p>
+                        </div>
+                        </div>
+                    </div>
+                
+
+                <div class="offset-md-2  services ">
+                    <div class="row">
+                    <div class="col-md-3 text-right">
+                        <span><img class="manImg" height="80px" width="src=80px"
+                                src="pics/bank_transfer.png"></img></span>
+                    </div>
+                    <div class="media-body col-md-9 pl-3">
+                        <h3 class="heading">Accounts</h3>
+                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+                            unorthographic.</p>
+                        <p><a href="accounts1.html" class="btn-custom">Read more</a></p>
+                    </div>
+                </div>
+            </div>
+
+                <div class="col-md-6 services">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <span><img class="manImg" height="80px" width="src=80px"
+                                    src="pics/maintenance.png"></img></span>
+                        </div>
+                        <div class="media-body col-md-9 pl-3">
+                            <h3 class="heading">Equipment</h3>
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+                                unorthographic.</p>
+                            <p><a href="equipment1.html" class="btn-custom">Read more</a></p>
+                        </div>                   
+                </div>
+            </div>
+
+                <div class="col-md-6 services">
+                   <div class="row">
+                    <div class="col-md-3">
+                            <span><img class="manImg" height="80px" width="src=80px" src="pics/review.png"></img></span>
+                        </div>
+                        <div class="media-body col-md-9 pl-3">
+                            <h3 class="heading">Customers</h3>
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+                                unorthographic.</p>
+                            <p><a href="customers1.html" class="btn-custom">Read more</a></p>
+                        </div>
+                    </div>
+            </div>
+                    <div class="offset-md-2  services">
+                        <div class="row">
+                        <div class="col-md-3 text-right">
+                            <span><img class="manImg" height="80px" width="src=80px"
+                                    src="pics/delivery.png"></img></span>
+                        </div>
+                        <div class="media-body col-md-9 pl-3">
+                            <h3 class="heading">Delivery</h3>
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+                                unorthographic.</p>
+                            <p><a href="delivery1.html" class="btn-custom">Read more</a></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-3 col-lg-3">
+                    <div class="mb-4">
+                        <h2 class="heading"><a href="#">Delivery management<span>.</span></a></h2>
+                        <p>Always available to help you.</p>
+                        <ul class="list-unstyled float-md-left float-lft mt-4">
+                            <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <div class="mb-4 ml-md-5">
+                        <h2 class="heading">Features</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="/stock" class="py-1 d-block"><i class="fa fa-check mr-3"></i>Stock</a></li>
+                            <li><a href="/staff" class="py-1 d-block"><i class="fa fa-check mr-3"></i>Staff</a></li>
+                            <li><a href="/accounts" class="py-1 d-block"><i class="fa fa-check mr-3"></i>Accounts</a></li>
+                            <li><a href="/equipment" class="py-1 d-block"><i class="fa fa-check mr-3"></i>Equipment</a>
+                            </li>
+                            <li><a href="/customers" class="py-1 d-block"><i class="fa fa-check mr-3"></i>Customers</a>
+                            </li>
+                            <li><a href="/delivery" class="py-1 d-block"><i class="fa fa-check mr-3"></i>Delivery</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <div class="mb-4">
+                        <h2 class="heading">you can reach us</h2>
+                        <div class="mb-3">
+                            <ul>
+                                <li><span class="icon fa fa-map-marker"></span><span class="text">Algoma Street
+                                        , Thunderbay</span></li>
+                                <li><a href="#"><span class="icon fa fa-phone"></span> <span
+                                            class="text">+1-807-1234-567</span></a></li>
+                                <li><a href="#">
+                                            contactus@deliverymanagement.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <div class="mb-4">
+                        <h2 class="heading">Always there to serve people</h2>
+                        <div class="opening-hours">
+                            <h4></h4>
+                            <p class="pl-3">
+                                <div onclick="window.scrollTo(0, 0);" style="float: right;padding: 248px 0px 0px 12px;"><i class="fa fa-angle-up"style="font-size: 60px;"></i> </div>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        setTimeout(() => {
+           $("#flash_msg_dashboard").fadeOut('slow');
+         },3000);
+    </script>
+
+    <!-- loader -->
+ 
+
+
+</body>
+
+</html>
